@@ -32,3 +32,8 @@ The plot for the ANN predicted values are: <br>
 ![image](https://user-images.githubusercontent.com/30387574/77289418-f6b8fc00-6cff-11ea-925f-8e44a22a51d2.png)
 
 <br>The ANN is then applied on the Test dataset to get the predicted infected probability values, which are then saved in an excel file.
+
+
+In the part 2 folder, there are 2 python notebooks.
+* FliprLSTMAccuracy.ipynb -> This file is just to find out the accuracy of the LSTM model. It does not contain the full answer for part 2.
+* FliprLSTMTimeSeries.ipynb-> This file is the proper answer to the Part 2 question. It contains the LSTM model, finds the new Diuresis values and then applies the ANN also.
