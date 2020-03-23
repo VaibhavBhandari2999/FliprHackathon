@@ -16,7 +16,19 @@ The dataset folder consists of a<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          3) Variable Descriptions<br>
 
 
-The Part 1 folder contains a python notebook where the Artificial Neural Network model is implemented for the first question.
-It also contains the excel file with the infected probability values.
+For part 1, the model used is an Artificial Neurak Network(ANN). The ANN is trained on the Training Dataset and the best checkpoint is saved. The best checkpoint is then taken and the ANN is then applied on the Testing Dataset.<br> The predicted infected probabilties are then saved in an excel file.
+The plot for the ANN predicted values are: <br><br>
+![image](https://user-images.githubusercontent.com/30387574/77289149-64b0f380-6cff-11ea-87d4-4d47aaf9ebee.png)
 
-The Part 2 folder contains 2 python notebooks where the LSTM model is implemented along with the Neural Network model
+The MSE and MAE error values for the ANN are:<br><br>
+![Capture](https://user-images.githubusercontent.com/30387574/77289287-ad68ac80-6cff-11ea-9902-24179fd8b18f.JPG)
+
+<br><br><br>
+For part 2, the model used for the time series prediction is an LSTM model. The accuracy graph of the LSTM model is below: <br>
+![Capture](https://user-images.githubusercontent.com/30387574/77289368-dab55a80-6cff-11ea-8e7d-6f9c2ab7b83e.JPG)
+<br>
+<br>The values got from the LSTM model are then replaced in the Training Dataset and the Neural Network is trained again.<br>
+The plot for the ANN predicted values are: <br>
+![image](https://user-images.githubusercontent.com/30387574/77289418-f6b8fc00-6cff-11ea-925f-8e44a22a51d2.png)
+
+<br>The ANN is then applied on the Test dataset to get the predicted infected probability values, which are then saved in an excel file.
